@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.fs" />
+    <Compile Include="ClubMeetings.fs" />
+    <Compile Include="EventSourcing.fs" />
+    <Compile Include="MemberDayOffRequests.fs" />
+    <Compile Include="MemberManagement.fs" />
+    <Compile Include="MemberMessages.fs" />
+    <Compile Include="RolePlacements.fs" />
+    <Compile Include="RoleRequests.fs" />
+    <Compile Include="Users.fs" />
+    <Compile Include="Library.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ToastmastersRecord.Data\ToastmastersRecord.Data.csproj" />
+    <ProjectReference Include="..\ToastmastersRecord.Domain\ToastmastersRecord.Domain.fsproj" />
+    <ProjectReference Include="..\Common.FSharp\Common.FSharp.fsproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+  </ItemGroup>
+
+</Project>

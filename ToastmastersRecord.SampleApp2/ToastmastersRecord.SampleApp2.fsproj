@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Akka.FSharp" Version="1.3.12" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ToastmastersRecord.Domain\ToastmastersRecord.Domain.fsproj" />
+    <ProjectReference Include="..\Common.FSharp\Common.FSharp.fsproj" />
+    <ProjectReference Include="..\Common.FSharp.Actors\Common.FSharp.Actors.fsproj" />
+    <ProjectReference Include="..\ToastmastersRecord.Domain.Persistence\ToastmastersRecord.Domain.Persistence.fsproj" />
+    <ProjectReference Include="..\ToastmastersRecord.SampleApp\ToastmastersRecord.SampleApp.fsproj" />
+    <ProjectReference Include="..\Common.FSharp\Common.FSharp.fsproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,70 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/psgivens/Repos/psgivens/ToastmastersRecord.Core/ToastmastersRecord.Data/ToastmastersRecord.Data.csproj": {}
+  },
+  "projects": {
+    "/home/psgivens/Repos/psgivens/ToastmastersRecord.Core/ToastmastersRecord.Data/ToastmastersRecord.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/psgivens/Repos/psgivens/ToastmastersRecord.Core/ToastmastersRecord.Data/ToastmastersRecord.Data.csproj",
+        "projectName": "ToastmastersRecord.Data",
+        "projectPath": "/home/psgivens/Repos/psgivens/ToastmastersRecord.Core/ToastmastersRecord.Data/ToastmastersRecord.Data.csproj",
+        "packagesPath": "/home/psgivens/.nuget/packages/",
+        "outputPath": "/home/psgivens/Repos/psgivens/ToastmastersRecord.Core/ToastmastersRecord.Data/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/home/psgivens/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.2.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "target": "Package",
+              "version": "[2.2.4, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

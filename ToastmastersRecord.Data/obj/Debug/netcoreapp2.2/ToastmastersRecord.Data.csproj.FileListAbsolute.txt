@@ -1,0 +1,11 @@
+/home/psgivens/Repos/psgivens/ToastmastersRecord.Core/ToastmastersRecord.Data/bin/Debug/netcoreapp2.2/ToastmastersRecord.Data.deps.json
+/home/psgivens/Repos/psgivens/ToastmastersRecord.Core/ToastmastersRecord.Data/bin/Debug/netcoreapp2.2/ToastmastersRecord.Data.runtimeconfig.json
+/home/psgivens/Repos/psgivens/ToastmastersRecord.Core/ToastmastersRecord.Data/bin/Debug/netcoreapp2.2/ToastmastersRecord.Data.runtimeconfig.dev.json
+/home/psgivens/Repos/psgivens/ToastmastersRecord.Core/ToastmastersRecord.Data/bin/Debug/netcoreapp2.2/ToastmastersRecord.Data.dll
+/home/psgivens/Repos/psgivens/ToastmastersRecord.Core/ToastmastersRecord.Data/bin/Debug/netcoreapp2.2/ToastmastersRecord.Data.pdb
+/home/psgivens/Repos/psgivens/ToastmastersRecord.Core/ToastmastersRecord.Data/obj/Debug/netcoreapp2.2/ToastmastersRecord.Data.csprojAssemblyReference.cache
+/home/psgivens/Repos/psgivens/ToastmastersRecord.Core/ToastmastersRecord.Data/obj/Debug/netcoreapp2.2/ToastmastersRecord.Data.csproj.CoreCompileInputs.cache
+/home/psgivens/Repos/psgivens/ToastmastersRecord.Core/ToastmastersRecord.Data/obj/Debug/netcoreapp2.2/ToastmastersRecord.Data.AssemblyInfoInputs.cache
+/home/psgivens/Repos/psgivens/ToastmastersRecord.Core/ToastmastersRecord.Data/obj/Debug/netcoreapp2.2/ToastmastersRecord.Data.AssemblyInfo.cs
+/home/psgivens/Repos/psgivens/ToastmastersRecord.Core/ToastmastersRecord.Data/obj/Debug/netcoreapp2.2/ToastmastersRecord.Data.dll
+/home/psgivens/Repos/psgivens/ToastmastersRecord.Core/ToastmastersRecord.Data/obj/Debug/netcoreapp2.2/ToastmastersRecord.Data.pdb
