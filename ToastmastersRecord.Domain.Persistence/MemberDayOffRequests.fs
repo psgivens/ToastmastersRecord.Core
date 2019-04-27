@@ -6,10 +6,7 @@ open ToastmastersRecord.Domain.DomainTypes
 open ToastmastersRecord.Domain.MemberMessages
 open ToastmastersRecord.Data.Entities
 
-open Newtonsoft.Json
-open Microsoft.EntityFrameworkCore
-
-let persist (userId:UserId) (streamId:StreamId) (state:Envelope<DayOffRequestCommand> option) =
+let persist (_:UserId) (streamId:StreamId) (state:Envelope<DayOffRequestCommand> option) =
     use context = new ToastmastersEFDbContext () 
     let entity = context.DaysOff.Find (StreamId.unbox streamId)
     match entity, state with
@@ -25,5 +22,5 @@ let persist (userId:UserId) (streamId:StreamId) (state:Envelope<DayOffRequestCom
                     MessageId = MessageId.unbox messageId
                 )) |> ignore
     | _, Option.None -> context.DaysOff.Remove entity |> ignore        
-    | _, Some(item) -> ()
+    | _, Some(_) -> ()
     context.SaveChanges () |> ignore

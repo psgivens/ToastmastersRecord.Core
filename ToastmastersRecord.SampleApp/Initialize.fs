@@ -126,7 +126,7 @@ let composeActors system =
              buildState ClubMeetings.evolve,
              (ClubMeetings.handle {
                 RoleActions.createRole=createRolePlacement
-                RoleActions.cancelRoles=cancelRolePlacement Persistence.RolePlacements.findMeetingPlacements}),
+                RoleActions.cancelMeetingRoles=cancelRolePlacement Persistence.RolePlacements.findMeetingPlacements}),
              Persistence.ClubMeetings.persist)    
              
     { MemberManagementActors=memberManagementActors

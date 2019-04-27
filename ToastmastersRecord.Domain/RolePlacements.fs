@@ -57,7 +57,6 @@ let handle (command:CommandHandlers<RolePlacementEvent, Version>) (state:RolePla
     | _, RolePlacementCommand.Cancel _ -> failwith "Cannot cancel a role if does not exist or is complete"
     |> command.event
 
-// TODO write 'evolve' function
 let evolve (state:RolePlacementState option) (event:RolePlacementEvent) = 
     match state, event with
     | None, RolePlacementEvent.Opened(rid, mid) -> { RolePlacementState.State=Open; RoleTypeId=rid; MeetingId=mid }

@@ -33,7 +33,7 @@ let persist (userId:UserId) (streamId:StreamId) (state:RoleRequestState option) 
             )) |> ignore
     | _, Option.None -> context.RoleRequests.Remove entity |> ignore        
     | _, Some(item) -> 
-        () // TODO: update
+        () // STUB: update
     context.SaveChanges () |> ignore
     
 let find (userId:UserId) (streamId:StreamId) =

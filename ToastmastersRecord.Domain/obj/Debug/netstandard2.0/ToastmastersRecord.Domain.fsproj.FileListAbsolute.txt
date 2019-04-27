@@ -1,8 +1,0 @@
-/home/psgivens/Repos/psgivens/ToastmastersRecord.Core/ToastmastersRecord.Domain/bin/Debug/netstandard2.0/ToastmastersRecord.Domain.deps.json
-/home/psgivens/Repos/psgivens/ToastmastersRecord.Core/ToastmastersRecord.Domain/bin/Debug/netstandard2.0/ToastmastersRecord.Domain.dll
-/home/psgivens/Repos/psgivens/ToastmastersRecord.Core/ToastmastersRecord.Domain/bin/Debug/netstandard2.0/ToastmastersRecord.Domain.pdb
-/home/psgivens/Repos/psgivens/ToastmastersRecord.Core/ToastmastersRecord.Domain/obj/Debug/netstandard2.0/ToastmastersRecord.Domain.fsprojAssemblyReference.cache
-/home/psgivens/Repos/psgivens/ToastmastersRecord.Core/ToastmastersRecord.Domain/obj/Debug/netstandard2.0/ToastmastersRecord.Domain.AssemblyInfoInputs.cache
-/home/psgivens/Repos/psgivens/ToastmastersRecord.Core/ToastmastersRecord.Domain/obj/Debug/netstandard2.0/ToastmastersRecord.Domain.AssemblyInfo.fs
-/home/psgivens/Repos/psgivens/ToastmastersRecord.Core/ToastmastersRecord.Domain/obj/Debug/netstandard2.0/ToastmastersRecord.Domain.dll
-/home/psgivens/Repos/psgivens/ToastmastersRecord.Core/ToastmastersRecord.Domain/obj/Debug/netstandard2.0/ToastmastersRecord.Domain.pdb

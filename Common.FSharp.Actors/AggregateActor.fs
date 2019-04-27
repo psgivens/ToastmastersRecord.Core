@@ -38,7 +38,9 @@ let create<'TState, 'TCommand, 'TEvent>
                     |> Handler.Run version
                     |> Async.Ignore
 
+                // 'stop' case in receiveEvents
                 mailbox.Self <! cmdenv.TransactionId
+
             } |> Async.Start
 
         let getState streamId =
@@ -63,6 +65,7 @@ let create<'TState, 'TCommand, 'TEvent>
                 | :? Envelope<'TCommand> as cmdenv -> 
                     cmdenv |> handleCommand stateAndVersion
                     [] |> recieveEvents cmdenv.TransactionId stateAndVersion 
+
                 | _ -> stateAndVersion |> receiveCommand
             }
         and recieveEvents transId stateAndVersion events = actor {
@@ -97,6 +100,7 @@ let create<'TState, 'TCommand, 'TEvent>
                     // Persist and notify events.
                     // Update state.
                     (state', head.Version) |> receiveCommand
+
                 | _ -> events |> recieveEvents transId stateAndVersion
             }
             

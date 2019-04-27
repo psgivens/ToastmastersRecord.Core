@@ -15,16 +15,15 @@ type ToastmastersEFDbContext with
             where (event.StreamId = aggregateId)
             select event
         } |> Seq.map (fun event ->
-                {
-                    Id = event.Id
-                    UserId = UserId.box event.UserId
-                    StreamId = StreamId.box aggregateId
-                    TransactionId = TransId.box event.TransactionId
-                    Version = Version.box (event.Version)
-                    Created = event.TimeStamp
-                    Item = (JsonConvert.DeserializeObject<'a> event.Event)
-                }
-            )
+            {
+                Id = event.Id
+                UserId = UserId.box event.UserId
+                StreamId = StreamId.box aggregateId
+                TransactionId = TransId.box event.TransactionId
+                Version = Version.box (event.Version)
+                Created = event.TimeStamp
+                Item = (JsonConvert.DeserializeObject<'a> event.Event)
+            })
 
 open ToastmastersRecord.Domain.MemberManagement
 type MemberManagementEventStore () =

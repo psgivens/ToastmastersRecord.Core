@@ -3,7 +3,6 @@
 
 open Common.FSharp.Envelopes
 open ToastmastersRecord.Domain.DomainTypes
-open ToastmastersRecord.Domain.RolePlacements 
 open System
 
 type MemberRoleHistory = { RoleTypeId:RoleTypeId; Date:DateTime }

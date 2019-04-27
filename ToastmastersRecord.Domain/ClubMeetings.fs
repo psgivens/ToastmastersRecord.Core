@@ -32,7 +32,7 @@ let (|MatchStateValue|_|) state =
 
 type RoleActions = { 
     createRole: Envelope<ClubMeetingCommand> -> RoleTypeId -> Async<obj>
-    cancelRoles: Envelope<ClubMeetingCommand> -> Async<unit>
+    cancelMeetingRoles: Envelope<ClubMeetingCommand> -> Async<unit>
     }
 
 let handle         
@@ -76,7 +76,7 @@ let handle
             do! ClubMeetingEvent.Canceling |> Handler.Raise
 
             return async {
-                do! roleActions.cancelRoles cmdenv 
+                do! roleActions.cancelMeetingRoles cmdenv 
             
                 return ClubMeetingEvent.Canceled
             }
