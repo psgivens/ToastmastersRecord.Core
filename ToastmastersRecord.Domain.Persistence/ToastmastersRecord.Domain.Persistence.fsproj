@@ -5,7 +5,7 @@
   <ItemGroup>
     <ProjectReference Include="..\ToastmastersRecord.Data\ToastmastersRecord.Data.csproj" />
     <ProjectReference Include="..\ToastmastersRecord.Domain\ToastmastersRecord.Domain.fsproj" />
-    <ProjectReference Include="..\Common.FSharp\Common.FSharp.fsproj" />
+    <ProjectReference Include="..\..\Common.FSharp\Common.FSharp\Common.FSharp.fsproj" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssemblyInfo.fs" />
