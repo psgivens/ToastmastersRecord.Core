@@ -52,7 +52,6 @@ let ingestMemberMessages system userId (actorGroups:ActorGroups) (messagesFileNa
             (userId) 
             (TransId.create ()) 
             (StreamId.create ()) 
-            (Version.box 0s) 
         |> messageRequestReply.Ask
         |> Async.AwaitTask)
 
@@ -84,7 +83,6 @@ let ingestMemberMessages system userId (actorGroups:ActorGroups) (messagesFileNa
 //            (userId)
 //            (TransId.create ())
 //            (StreamId.create ())
-//            (Version.box 0s)
 //        |> dayOffsRequestReply .Ask
 //        |> Async.AwaitTask)
 //    |> Async.Parallel
@@ -119,7 +117,6 @@ let ingestMemberMessages system userId (actorGroups:ActorGroups) (messagesFileNa
 //            (userId)
 //            (TransId.create ())
 //            (StreamId.create ())
-//            (Version.box 0s)
 //        |> roleRequestsRequestReplyCreated .Ask
 //        |> Async.AwaitTask)
 //    |> Async.Parallel

@@ -31,7 +31,6 @@ let createMember system userId (actorGroups:ActorGroups) name =
         (userId)
         (TransId.create ())
         (StreamId.create ())
-        (Version.box 0s)
     |> memberRequestReply.Ask
     |> Async.AwaitTask
     |> Async.Ignore

@@ -268,7 +268,6 @@ let editPlacement date (rolePlacementRequestReply:IActorRef) userId (placement:R
                     userId
                     (TransId.create ())
                     (placement.Id |> StreamId.box)
-                    (Version.box 0s)
                 |> rolePlacementRequestReply.Ask
                 |> Async.AwaitTask
                 |> Async.Ignore
@@ -289,7 +288,6 @@ let editPlacement date (rolePlacementRequestReply:IActorRef) userId (placement:R
                     userId
                     (TransId.create ())
                     (placement.Id |> StreamId.box)
-                    (Version.box 0s)
                 |> rolePlacementRequestReply.Ask
                 |> Async.AwaitTask
                 |> Async.Ignore
@@ -327,7 +325,6 @@ let createMeeting (meetingRequestReplyCreate:IActorRef) userId date =
         (userId)
         (TransId.create ())
         (StreamId.create ())
-        (Version.box 0s)
     |> meetingRequestReplyCreate.Ask
     |> Async.AwaitTask
     |> Async.Ignore

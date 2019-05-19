@@ -65,7 +65,6 @@ let ingestMembers system userId actorGroups (fileName:string) =
                     (userId)
                     (TransId.create ())
                     (streamId)
-                    (Version.box 0s)
                 |> memberRequestReply.Ask
                 |> Async.AwaitTask
                 |> Async.Ignore
@@ -126,7 +125,6 @@ let ingestSpeechCount system userId (fileName:string) (actorGroups:ActorGroups) 
             userId
             (TransId.create ())
             id
-            (Version.box 0s)
         |> historyRequestReplyCanceled.Ask
         |> Async.AwaitTask)
 

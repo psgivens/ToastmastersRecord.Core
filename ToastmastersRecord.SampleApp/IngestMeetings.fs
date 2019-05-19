@@ -49,7 +49,6 @@ let ingestMeetings system userId actorGroups =
             (userId)
             (TransId.create ())
             (mtgid |> MeetingId.unbox |> StreamId.box)
-            (Version.box 0s)
         |> meetingRequestReplyCreate.Ask
         |> Async.AwaitTask)
 
@@ -78,7 +77,6 @@ let ingestMeetings system userId actorGroups =
             (userId)
             (TransId.create ())
             (mtgid |> MeetingId.unbox |> StreamId.box)
-            (Version.box 0s)
         |> meetingRequestReplyOccur.Ask
         |> Async.AwaitTask)
 
@@ -106,7 +104,6 @@ let ingestMeetings system userId actorGroups =
 //            (userId)
 //            (TransId.create ())
 //            (StreamId.box meeting.Id)
-//            (Version.box 0s)
 //        |> meetingRequestReplyCanceled.Ask
 //        |> fun t -> t :> Task)
 //    |> Seq.toArray

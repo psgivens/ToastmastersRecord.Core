@@ -25,7 +25,6 @@ let spawnPlacementManager system userId (rolePlacmentRequestReply:IActorRef) =
                 (userId) 
                 (TransId.create ()) 
                 (StreamId.box placement.Id) 
-                (Version.box 0s) 
             |> rolePlacmentRequestReply.Ask
             |> fun t -> mailbox.Sender () <! t.Result
 
@@ -38,7 +37,7 @@ let spawnRoleConfirmationReaction system (actorGroups:ActorGroups) =
         match cmdenv.Item with
         | RolePlacementEvent.Assigned (mid, rid) -> 
             cmdenv 
-            |> Envelope.reuseEnvelope cmdenv.StreamId (fun evt -> RolePlacementCommand.Complete)
+            |> Envelope.reuseEnvelope cmdenv.StreamId cmdenv.Version (fun evt -> RolePlacementCommand.Complete)
             |> actorGroups.RolePlacementActors.Tell
         | _ -> ()) 
     |> actorOf2

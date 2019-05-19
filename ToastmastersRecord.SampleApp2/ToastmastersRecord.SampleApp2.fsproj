@@ -19,7 +19,6 @@
     <ProjectReference Include="..\..\Common.FSharp\Common.FSharp.Actors\Common.FSharp.Actors.fsproj" />
     <ProjectReference Include="..\ToastmastersRecord.Domain.Persistence\ToastmastersRecord.Domain.Persistence.fsproj" />
     <ProjectReference Include="..\ToastmastersRecord.SampleApp\ToastmastersRecord.SampleApp.fsproj" />
-    <ProjectReference Include="..\Common.FSharp\Common.FSharp.fsproj" />
   </ItemGroup>
 
 </Project>

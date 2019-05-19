@@ -93,7 +93,6 @@ let reviewMessages userId (dayOffsRequestReply:IActorRef) (roleRequestsRequestRe
                     (userId)
                     (TransId.create ())
                     (StreamId.create ())
-                    (Version.box 0s)
                 |> dayOffsRequestReply.Ask
                 |> Async.AwaitTask
                 |> Async.Ignore
@@ -152,7 +151,6 @@ let reviewMessages userId (dayOffsRequestReply:IActorRef) (roleRequestsRequestRe
                     (userId)
                     (TransId.create ())
                     (StreamId.create ())
-                    (Version.box 0s)
                 |> roleRequestsRequestReplyCreated.Ask
                 |> Async.AwaitTask
                 |> Async.Ignore

@@ -89,8 +89,7 @@ let composeActors system =
         |> envelopWithDefaults
             (meetingEnv.UserId)
             (meetingEnv.TransactionId)
-            (StreamId.create ())
-            (Version.box 0s))
+            (StreamId.create ()))
         |> placementRequestReplyCreate.Ask
         |> Async.AwaitTask
 
@@ -111,7 +110,6 @@ let composeActors system =
                 (meetingEnv.UserId)
                 (meetingEnv.TransactionId)
                 (StreamId.create ())
-                (Version.box 0s)
             |> placementRequestReplyCancel.Ask
             |> Async.AwaitTask)
         |> Async.Parallel

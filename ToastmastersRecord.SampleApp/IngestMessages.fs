@@ -70,7 +70,6 @@ let ingestMemberMessages system userId (actorGroups:ActorGroups) =
             (userId) 
             (TransId.create ()) 
             (msgid |> MessageId.unbox |> StreamId.box) 
-            (Version.box 0s) 
         |> messageRequestReply.Ask
         |> Async.AwaitTask)
 
@@ -102,8 +101,7 @@ let ingestDaysOff system userId (actorGroups:ActorGroups) =
             (userId)
             (TransId.create ())
             (StreamId.create ())
-            (Version.box 0s)
-        |> dayOffsRequestReply .Ask
+        |> dayOffsRequestReply.Ask
         |> Async.AwaitTask)
     |> Async.Parallel
     |> Async.Ignore
@@ -137,7 +135,6 @@ let ingestRoleRequests system userId (actorGroups:ActorGroups) =
             (userId)
             (TransId.create ())
             (StreamId.create ())
-            (Version.box 0s)
         |> roleRequestsRequestReplyCreated .Ask
         |> Async.AwaitTask)
     |> Async.Parallel

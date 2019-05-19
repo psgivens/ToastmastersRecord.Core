@@ -8,7 +8,6 @@ let onEvents sys name events =
     actorOf2 
     >> spawn sys (name + "_onEvents")
     >> SubjectActor.subscribeTo events
-
        
 let debugger system name errorActor =
     let p mailbox cmdenv =
